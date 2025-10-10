@@ -2,7 +2,7 @@ services:
   kkalssam-python-template:
     build:
       context: .
-    image: node22.19.0-python3.13.7:trixie-slim-uv
+    image: node22.20.0-python3.13.9:trixie-slim-uv
     container_name: kkalssam-python-template
     tty: true
     ipc: host
