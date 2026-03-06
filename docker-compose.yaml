@@ -5,6 +5,7 @@ services:
     image: trixie-slim:uv-nvm
     container_name: kkalssam-python-template
     tty: true
+    network_mode: host
     ipc: host
     environment:
       - DISPLAY=${DISPLAY:-host.docker.internal:0}
