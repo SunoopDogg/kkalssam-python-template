@@ -34,5 +34,3 @@ RUN . "$NVM_DIR/nvm.sh"
 # Clean up
 RUN apt clean \
     && rm -rf /var/lib/apt/lists/*
-
-WORKDIR /root

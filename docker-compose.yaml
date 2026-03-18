@@ -4,6 +4,7 @@ services:
       context: .
     image: trixie-slim:uv-nvm
     container_name: kkalssam-python-template
+    working_dir: /root/kkalssam-python-template
     environment:
       - DISPLAY=${DISPLAY:-host.docker.internal:0}
       - QT_X11_NO_MITSHM=1
