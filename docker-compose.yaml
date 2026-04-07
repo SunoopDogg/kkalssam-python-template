@@ -7,6 +7,7 @@ services:
     volumes:
       - .:/root/kkalssam-python-template
       - /tmp/.X11-unix:/tmp/.X11-unix
+      - uv-cache:/root/.cache/uv
     environment:
       - DISPLAY=${DISPLAY:-host.docker.internal:0}
       - QT_X11_NO_MITSHM=1
@@ -29,3 +30,6 @@ services:
       service: kkalssam-python-template
     profiles:
       - gpu
+
+volumes:
+  uv-cache:
